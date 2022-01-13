@@ -1,3 +1,3 @@
 Hello World!
 
-[file](newfile.html)
+[file](lab-report-1-week-2.html)
