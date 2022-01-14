@@ -76,6 +76,15 @@ SSH keys are useful because they enable the user to not have to enter a password
 
 This copies the public key to the .ssh folder on the server. After doing this, you should be able to ssh and scp without a password. 
 
-Logging in without a password
+Logging in without a password:
+
+![Image](sshkey1.png)
 
 **6. Other Useful Tricks**
+
+* type the command in quotes after `ssh` to run it directly on the remote server and then exit
+* seperate the list of commands with semicolons to run them all at once 
+
+Here's and example of combining these commands to connect to the server and compile/run WhereAmI.java on it all at once and then exit the server. 
+
+![Image](other.png)
