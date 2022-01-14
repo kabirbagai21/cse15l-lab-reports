@@ -53,3 +53,19 @@ To log out of the remote server, type the command `exit`
 
 **4. Using `scp` to Copy Files Over SSH**
 
+Now, we will copy a file on our computer to the remote server using the `scp` command. You can use the provided WhereAmI.java file as an example. First compile and run this file on your computer using `javac` and `java` to make sure it works as expected. Then type the following command into the command line (replacing the account name with yours)
+
+`scp WhereAmI.java cs15lwi22ajr@ieng6.ucsd.edu:~/`
+
+After doing this, you will be prompted to enter your passcode. Then, ssh onto the remote server as usual and type in the command `ls`. If all went well, WhereAmI.java should appear in the list of files on ieng6. 
+
+Here is an example of running the file and using scp to copy it 
+
+![Image](scp1.png)
+
+
+Here is an example of listing the file and running it on the server
+
+![Image](scp2.png)
+
+**5. Setting up a ssh **
