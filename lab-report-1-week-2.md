@@ -53,7 +53,7 @@ To log out of the remote server, type the command `exit`
 
 **4. Using `scp` to Copy Files Over SSH**
 
-Now, we will copy a file on our computer to the remote server using the `scp` command. You can use the provided WhereAmI.java file as an example. First compile and run this file on your computer using `javac` and `java` to make sure it works as expected. Then type the following command into the command line (replacing the account name with yours)
+Now, we will copy a file on our computer to the remote server using the `scp` command. I used the WhereAmI.java file as an example. First compile and run this file on your computer using `javac` and `java` to make sure it works as expected. Then type the following command into the command line (replacing the account name with yours)
 
 `scp WhereAmI.java cs15lwi22ajr@ieng6.ucsd.edu:~/`
 
@@ -69,3 +69,13 @@ Here is an example of listing the file and running it on the server
 ![Image](scp2.png)
 
 **5. Setting Up an SSH Key**
+
+SSH keys are useful because they enable the user to not have to enter a password every time they wish to connect to the remote server. To set one up, type the command `ssh-keygen` to create a public/private key pair. Follow the prompts and note the locations of where the keys (`id_rsa.pub, id_rsa`) are stored. Then log on to the server and create a directory called .ssh using `mkdir`. Then log off and type the following command (using your account details) 
+
+`scp /Users/kabirbagai/.ssh/id_rsa.pub cs15lwi22ajr@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+
+This copies the public key to the .ssh folder on the server. After doing this, you should be able to ssh and scp without a password. 
+
+Logging in without a password
+
+**6. Other Useful Tricks**
