@@ -68,4 +68,4 @@ Here is an example of listing the file and running it on the server
 
 ![Image](scp2.png)
 
-**5. Setting up a ssh **
+**5. Setting Up an SSH Key**
