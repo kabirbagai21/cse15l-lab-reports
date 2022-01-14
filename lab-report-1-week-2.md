@@ -23,7 +23,7 @@ copy the following command into the command line:
 
 `$ ssh cs15lwi22ajr@ieng6.ucsd.edu`
 
-*note the account name is unique to me, place your own account name before the `@ieng6.uscd.edu`
+*Note that the account name is unique to me. Place your own account name before the `@ieng6.uscd.edu`. 
 
 After this, the setup should start and look something like the picture below with some additional prompts if it's your first time. 
 
