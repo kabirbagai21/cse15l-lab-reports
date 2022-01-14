@@ -80,7 +80,7 @@ Logging in without a password:
 
 ![Image](sshkey1.png)
 
-**6. Other Useful Tricks**
+**6. Optimizing Remote Running**
 
 * type the command in quotes after `ssh` to run it directly on the remote server and then exit
 * seperate the list of commands with semicolons to run them all at once 
