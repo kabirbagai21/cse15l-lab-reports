@@ -20,7 +20,7 @@ Symptom
 ![Image](breakingtest1symptom.png)
 
 
-The bug in the code caused files with text between a closed bracket and open parenthesis to be treated as links. The symptom of this is that text that isn't a link was being treated as one because it was contained in parentheses. In the picture above, "toby maguire version" is being ouputted even though it isn't a link. 
+The bug in the code caused files with text between a closed bracket and open parenthesis (failure inducing inputs) to be treated as links. The symptom of this is that text that isn't a link was being treated as one because it was contained in parentheses. In the picture above, "toby maguire version" is being ouputted even though it isn't a link. 
 
 ***
 
@@ -54,4 +54,4 @@ Symptom
 ![Image](breakingtest3symptom.png)
 
 
-The bug in the code caused files with no closed parenthesis to fail when passed into MarkdownParse. The symptom of the bug was a index out of bounds exception because the program was unable to find the index of the next closed bracket.  
+The bug in the code caused files with no closed parenthesis (failure inducing inputs) to fail when passed into MarkdownParse. The symptom of the bug was a index out of bounds exception because the program was unable to find the index of the next closed bracket.  
