@@ -3,15 +3,50 @@
 
 [Home](index.html)
 
+***
+
 **Code Change 1**
 
-Assumes brackets are always immediately followed by parentheses for link in Markdown
+Fixes issue of brackets not immediately followed by parentheses
 
 Github
 ![Image](codechange1git.png)
 
-Failure inducing input
+
+
+[Failure Inducing Input](https://github.com/kabirbagai21/markdown-parse/blob/main/breaking_test.md)
 
 Symptom
 
-The bug in the code caused files with text between a closed bracket and open parenthesis to be treated as links. The symptom of this is that text that isn't a link was being treated as one because it was contained in parentheses. 
+
+The bug in the code caused files with text between a closed bracket and open parenthesis to be treated as links. The symptom of this is that text that isn't a link was being treated as one because it was contained in parentheses. In the picture above, "toby maguire version" is being ouputted even though it isn't a link. 
+
+***
+
+**Code Change 2**
+
+Fixes issue of infinite loop 
+
+Github
+![Image](codechange2git.png)
+
+[Failure Inducing Input](breakingtest2.md)
+
+Symptom
+
+The bug in the code caused files with empty lines at the end of the document (failure inducing inputs) to fail when passed into MarkdownParse. The symptom of the bug was an infinite loop. One can see how currentIndex is printed over and over again in the above picture.  
+
+***
+
+**Code Change 3**
+
+Fixes issue of no closed parenthesis
+
+Github
+![Image](codechange3git.png)
+
+[Failure Inducing Input](https://github.com/kabirbagai21/markdown-parse/blob/main/breaking_test_3.md)
+
+Symptom
+
+The bug in the code caused files with no closed parenthesis to fail when passed into MarkdownParse. The symptom of the bug was a .  
