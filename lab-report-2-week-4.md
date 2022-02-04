@@ -20,7 +20,7 @@ Symptom
 ![Image](breakingtest1symptom.png)
 
 
-The bug in the code caused files with text between a closed bracket and open parenthesis (failure inducing inputs) to be treated as links. The symptom of this is that text that isn't a link was being treated as one because it was contained in parentheses. In the picture above, "toby maguire version" is being ouputted even though it isn't a link. 
+The bug in the code caused files with text between a closed bracket and open parenthesis (failure inducing inputs) to be treated as links. The symptom of this is that text that isn't a link was being treated as one because it was contained in parentheses. In the picture above, "toby maguire version" is being ouputted even though it isn't a link. The issue in the code that caused the bug was that the program wasn't checking if the bracket immediately followed the closed parentheses (i.e. the difference between their indicies is 1). 
 
 ***
 
@@ -37,7 +37,7 @@ Symptom
 
 ![Image](breakingtest2symptom.png)
 
-The bug in the code caused files with empty lines at the end of the document (failure inducing inputs) to fail when passed into MarkdownParse. The symptom of the bug was an infinite loop. One can see how currentIndex is printed over and over again in the above picture.  
+The bug in the code caused files with empty lines at the end of the document (failure inducing inputs) to fail when passed into MarkdownParse. The symptom of the bug was an infinite loop. One can see how currentIndex is printed over and over again in the above picture. The bug was caused by the absence of a break statement in the while loop in case another closed bracket could not be found (returns -1). 
 
 ***
 
