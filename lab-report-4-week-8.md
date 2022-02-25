@@ -7,7 +7,7 @@
 
 [Link to my repository](https://github.com/kabirbagai21/markdown-parse)
 
-[Link to other group's repository]()
+[Link to other group's repository](https://github.com/IncogOwl/markdown-parse)
 
 **Added Tests to MarkdownParseTest**
 
@@ -26,6 +26,8 @@
 ***
 
 ![Image](Failure3.png)
+
+**Output for other group's tests (all three failed)**
 
 **Snippet 1**
 
