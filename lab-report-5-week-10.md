@@ -5,7 +5,7 @@
 
 ***
 
-To find the tests where the two implementations of MarkdownParse.java produced different results, I simply downloaded the results.txt file from Lab that had the output of running all the tests and compared them side by side. 
+To find the tests where the two implementations of MarkdownParse.java produced different results, I simply downloaded the results.txt file from Lab that had the output of running all the tests and compared them side by side. I found discrepancies in two tests, 194 and 342. 
 
 **Test 194**
 
