@@ -24,6 +24,7 @@ In this case, our group's implementation is correct. In the test above, there ar
 <br />
 
 ![Image](lab9code.png)
+
 Here is a snippet of code from the lab 9 implementation. A check should be added after these two statments to determine if the difference between the indicies is 1. 
 
 **Test 342**
